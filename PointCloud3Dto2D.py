@@ -1,6 +1,6 @@
 #Point Cloud in Image [3D - 2D]
 import os
-import cv2
+import opencv3 as cv2
 import matplotlib.pyplot as plt
 import open3d
 import numpy as np

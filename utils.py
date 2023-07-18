@@ -1,8 +1,9 @@
 # utils.py
 # Credit: https://github.com/darylclimb/cvml_project/blob/cb06850b9477550b9c9e3c5651d013b347cc9b1b/projections/lidar_camera_projection/utils.py#L88
 
-import numpy as np
-import cv2
+# IMPORT NECESSARY LIBRARIES
+import numpy as np # numpy used to perform mathemtical operations on arrays
+import cv2 # used to read video, from openCV
 
 class Box3D(object):
     """
