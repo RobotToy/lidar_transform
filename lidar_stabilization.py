@@ -4,7 +4,7 @@
 import rclpy
 from rclpy.node import NotInitializedException
 import numpy as np
-import pyzed.sl as sl #TODO: figure out what sl means
+# import pyzed.sl as sl #TODO: figure out what sl means
 
 
 
@@ -74,4 +74,4 @@ if ts_handler.is_new(sensors_data.get_barometer_data()):
 zed.close()
 
 
-# TODO --> USE DATA TO STABILIZE LIDAR 
+# TODO --> Lidar is moving, thus the frame should move not the objects
