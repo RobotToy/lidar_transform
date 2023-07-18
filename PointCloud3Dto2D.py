@@ -58,5 +58,5 @@ if __name__ == '__main__':
     pc_velo = load_velo_scan('data/000114.bin')[:, :3]
 
     # render_image_with_boxes(rgb, labels, calib)
-    render_lidar_with_boxes(pc_velo, labels, calib, img_width=img_width, img_height=img_height)
-    # render_lidar_on_image(pc_velo, rgb, calib, img_width, img_height)
+    # render_lidar_with_boxes(pc_velo, labels, calib, img_width=img_width, img_height=img_height)
+    render_lidar_on_image(pc_velo, rgb, calib, img_width, img_height)
