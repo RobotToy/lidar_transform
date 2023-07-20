@@ -1,7 +1,6 @@
 #Point Cloud in Image [3D - 2D]
 import os
 import cv2
-#from cv2 import circle
 import matplotlib.pyplot as plt
 import open3d
 import numpy as np
@@ -12,7 +11,7 @@ def render_lidar_on_image(pts_velo, img, calib, img_width, img_height):
     proj_velo2cam2 = project_velo_to_cam2(calib)
 
     # apply projection
-    pts_2d = project_to_image(pts_svelo.transpose(), proj_velo2cam2)
+    pts_2d = project_to_image(pts_velo.transpose(), proj_velo2cam2)
 
     # Filter lidar points to be within image FOV
     inds = np.where((pts_2d[0, :] < img_width) & (pts_2d[0, :] >= 0) &
